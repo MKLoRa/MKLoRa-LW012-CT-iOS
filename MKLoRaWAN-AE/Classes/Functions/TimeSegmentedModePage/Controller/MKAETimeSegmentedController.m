@@ -204,6 +204,18 @@ MKAETimeSegmentedCellDelegate>
     }
 }
 
+/// Report Interval 输入框改变
+/// - Parameters:
+///   - index: 当前cell所在index
+///   - interval: 当前输入框内容
+- (void)ae_timeSegmentedCell_reportIntervalChanged:(NSInteger)index interval:(NSString *)interval {
+    if (![self cellCanSelected]) {
+        return;
+    }
+    MKAETimeSegmentedCellModel *cellModel = self.section2List[index];
+    cellModel.interval = interval;
+}
+
 /**
  重新设置cell的子控件位置，主要是删除按钮方面的处理
  */
