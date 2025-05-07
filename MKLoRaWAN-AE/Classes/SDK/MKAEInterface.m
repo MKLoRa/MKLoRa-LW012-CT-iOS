@@ -180,14 +180,6 @@
                  failedBlock:failedBlock];
 }
 
-+ (void)ae_readLowPowerPromptWithSucBlock:(void (^)(id returnData))sucBlock
-                              failedBlock:(void (^)(NSError *error))failedBlock {
-    [self readDataWithTaskID:mk_ae_taskReadLowPowerPromptOperation
-                     cmdFlag:@"0104"
-                    sucBlock:sucBlock
-                 failedBlock:failedBlock];
-}
-
 + (void)ae_readLowPowerPayloadStatusWithSucBlock:(void (^)(id returnData))sucBlock
                                      failedBlock:(void (^)(NSError *error))failedBlock {
     [self readDataWithTaskID:mk_ae_taskReadLowPowerPayloadStatusOperation

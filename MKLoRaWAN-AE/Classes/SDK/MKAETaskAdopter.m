@@ -285,12 +285,6 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
             @"batteryPower":batteryPower
         };
         operationID = mk_ae_taskReadAllCycleBatteryInformationOperation;
-    }else if ([cmd isEqualToString:@"0104"]) {
-        //读取低电百分比
-        resultDic = @{
-            @"prompt":[MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(0, content.length)],
-        };
-        operationID = mk_ae_taskReadLowPowerPromptOperation;
     }else if ([cmd isEqualToString:@"0106"]) {
         //读取低电触发心跳开关状态
         BOOL isOn = [content isEqualToString:@"01"];
@@ -1211,9 +1205,6 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
     }else if ([cmd isEqualToString:@"0100"]) {
         //清除电池电量数据
         operationID = mk_ae_taskBatteryResetOperation;
-    }else if ([cmd isEqualToString:@"0104"]) {
-        //配置低电百分比
-        operationID = mk_ae_taskConfigLowPowerPromptOperation;
     }else if ([cmd isEqualToString:@"0106"]) {
         //配置低电触发心跳开关状态
         operationID = mk_ae_taskConfigLowPowerPayloadStatusOperation;

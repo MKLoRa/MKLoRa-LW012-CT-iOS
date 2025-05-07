@@ -223,7 +223,7 @@ MKAEFilterEditSectionHeaderViewDelegate>
 - (void)loadSection0Datas {
     MKTextSwitchCellModel *cellModel = [[MKTextSwitchCellModel alloc] init];
     cellModel.index = 0;
-    cellModel.msg = @"BXP-TOF";
+    cellModel.msg = @"MK-TOF";
     cellModel.isOn = self.dataModel.isOn;
     [self.section0List addObject:cellModel];
 }

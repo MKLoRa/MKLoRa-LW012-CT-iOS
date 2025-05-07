@@ -23,15 +23,6 @@ typedef NS_ENUM(NSInteger, mk_ae_deviceMode) {
     mk_ae_deviceMode_timeSegmentedMode,   //Time-Segmented Mode
 };
 
-typedef NS_ENUM(NSInteger, mk_ae_lowPowerPrompt) {
-    mk_ae_lowPowerPrompt_tenPercent,
-    mk_ae_lowPowerPrompt_twentyPercent,
-    mk_ae_lowPowerPrompt_thirtyPercent,
-    mk_ae_lowPowerPrompt_fortyPercent,
-    mk_ae_lowPowerPrompt_fiftyPercent,
-    mk_ae_lowPowerPrompt_sixtyPercent,
-};
-
 typedef NS_ENUM(NSInteger, mk_ae_positioningStrategy) {
     mk_ae_positioningStrategy_ble,      //BLE
     mk_ae_positioningStrategy_gps,      //GPS

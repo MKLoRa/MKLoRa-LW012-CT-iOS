@@ -364,7 +364,7 @@ mk_textSwitchCellDelegate>
     
     MKNormalTextCellModel *cellModel4 = [[MKNormalTextCellModel alloc] init];
     cellModel4.showRightIcon = YES;
-    cellModel4.leftMsg = @"BXP-TOF";
+    cellModel4.leftMsg = @"MK-TOF";
     [self.section2List addObject:cellModel4];
     
     MKNormalTextCellModel *cellModel5 = [[MKNormalTextCellModel alloc] init];

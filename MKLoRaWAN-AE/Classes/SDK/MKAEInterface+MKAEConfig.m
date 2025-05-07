@@ -172,16 +172,6 @@ static NSInteger const maxDataLen = 100;
                    failedBlock:failedBlock];
 }
 
-+ (void)ae_configLowPowerPrompt:(mk_ae_lowPowerPrompt)prompt
-                       sucBlock:(void (^)(void))sucBlock
-                    failedBlock:(void (^)(NSError *error))failedBlock {
-    NSString *commandString = [@"ed01010401" stringByAppendingString:[MKBLEBaseSDKAdopter fetchHexValue:prompt byteLen:1]];
-    [self configDataWithTaskID:mk_ae_taskConfigLowPowerPromptOperation
-                          data:commandString
-                      sucBlock:sucBlock
-                   failedBlock:failedBlock];
-}
-
 + (void)ae_configLowPowerPayloadStatus:(BOOL)isOn
                               sucBlock:(void (^)(void))sucBlock
                            failedBlock:(void (^)(NSError *error))failedBlock {
@@ -1816,7 +1806,7 @@ static NSInteger const maxDataLen = 100;
 + (void)ae_configTamperAlarmReportInterval:(NSInteger)interval
                                   sucBlock:(void (^)(void))sucBlock
                                failedBlock:(void (^)(NSError *error))failedBlock {
-    if (interval < 1 || interval > 1440) {
+    if (interval < 1 || interval > 14400) {
         [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
         return;
     }

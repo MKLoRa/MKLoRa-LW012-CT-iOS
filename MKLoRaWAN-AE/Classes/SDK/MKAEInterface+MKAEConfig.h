@@ -109,14 +109,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)ae_batteryResetWithSucBlock:(void (^)(void))sucBlock
                         failedBlock:(void (^)(NSError *error))failedBlock;
 
-/// When the power of the device is lower than how much, it is judged as a low power state.
-/// @param prompt prompt
-/// @param sucBlock Success callback
-/// @param failedBlock Failure callback
-+ (void)ae_configLowPowerPrompt:(mk_ae_lowPowerPrompt)prompt
-                       sucBlock:(void (^)(void))sucBlock
-                    failedBlock:(void (^)(NSError *error))failedBlock;
-
 ///  Whether to trigger a heartbeat when the device is low on battery.
 /// @param isOn isOn
 /// @param sucBlock Success callback

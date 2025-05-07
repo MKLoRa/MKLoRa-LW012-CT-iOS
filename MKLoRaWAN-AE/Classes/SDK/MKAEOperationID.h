@@ -28,7 +28,6 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     mk_ae_taskReadBatteryInformationOperation,      //读取电池电量消耗
     mk_ae_taskReadLastCycleBatteryInformationOperation, //读取上一周期电池电量消耗
     mk_ae_taskReadAllCycleBatteryInformationOperation,  //读取所有周期电池电量消耗
-    mk_ae_taskReadLowPowerPromptOperation,          //读取低电百分比
     mk_ae_taskReadLowPowerPayloadStatusOperation,   //读取低电触发心跳开关状态
     mk_ae_taskReadLowPowerPayloadIntervalOperation,     //读取低电状态下低电信息包上报间隔
     
@@ -146,7 +145,6 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     
 #pragma mark - 电池管理
     mk_ae_taskBatteryResetOperation,                    //清除电池电量数据
-    mk_ae_taskConfigLowPowerPromptOperation,            //配置低电百分比
     mk_ae_taskConfigLowPowerPayloadStatusOperation,     //配置低电触发心跳开关状态
     mk_ae_taskConfigLowPowerPayloadIntervalOperation,   //配置低电状态下低电信息包上报间隔
     

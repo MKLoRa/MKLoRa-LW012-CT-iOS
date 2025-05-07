@@ -130,9 +130,9 @@ UITableViewDataSource>
     if ([self.dataModel.gps integerValue] == 0 && [self.dataModel.acceData integerValue] == 0 && [self.dataModel.flash integerValue] == 0) {
         cellModel.value0 = @"0";
     }
-    cellModel.value1 = ([self.dataModel.flash integerValue] == 1 ? @"1" : @"");
+    cellModel.value1 = ([self.dataModel.gps integerValue] == 1 ? @"1" : @"");
     cellModel.value2 = ([self.dataModel.acceData integerValue] == 1 ? @"2" : @"");
-    cellModel.value3 = ([self.dataModel.gps integerValue] == 1 ? @"3" : @"");
+    cellModel.value3 = ([self.dataModel.flash integerValue] == 1 ? @"3" : @"");
     
     [self.section0List addObject:cellModel];
 }

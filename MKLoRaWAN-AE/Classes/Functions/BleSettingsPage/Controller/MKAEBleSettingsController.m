@@ -116,6 +116,7 @@ MKAEBroadcastTxPowerCellDelegate>
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     if (indexPath.section == 5 && indexPath.row == 0 && [MKAEConnectModel shared].hasPassword) {
         //有登录密码进来的才能修改密码，无登录密码进来的点击修改密码不响应
+        [[NSNotificationCenter defaultCenter] postNotificationName:@"MKTextFieldNeedHiddenKeyboard" object:nil];
         [self configPassword];
         return;
     }
