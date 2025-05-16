@@ -182,7 +182,7 @@ MKButtonMsgCellDelegate>
         [self.section2List removeAllObjects];
         [self.section3List removeAllObjects];
         [self.headerList removeAllObjects];
-        [self loadSectionDatas];
+        [self readDataFromDevice];
     } failedBlock:^(NSError * _Nonnull error) {
         [[MKHudManager share] hide];
         [self.view showCentralToast:error.userInfo[@"errorInfo"]];

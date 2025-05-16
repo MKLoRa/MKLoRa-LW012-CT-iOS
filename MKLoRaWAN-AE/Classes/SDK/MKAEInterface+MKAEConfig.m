@@ -532,7 +532,7 @@ static NSInteger const maxDataLen = 100;
 + (void)ae_configMotionModeTripEndTimeout:(NSInteger)time
                                  sucBlock:(void (^)(void))sucBlock
                               failedBlock:(void (^)(NSError *error))failedBlock {
-    if (time < 3 || time > 180) {
+    if (time < 1 || time > 180) {
         [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
         return;
     }
