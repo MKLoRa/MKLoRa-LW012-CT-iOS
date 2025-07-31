@@ -196,6 +196,54 @@
                  failedBlock:failedBlock];
 }
 
++ (void)ae_readLowPowerCondition1VoltageThresholdWithSucBlock:(void (^)(id returnData))sucBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition1VoltageThresholdOperation
+                     cmdFlag:@"010a"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerCondition1MinSampleIntervalWithSucBlock:(void (^)(id returnData))sucBlock
+                                                   failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition1MinSampleIntervalOperation
+                     cmdFlag:@"010b"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerCondition1SampleTimesWithSucBlock:(void (^)(id returnData))sucBlock
+                                             failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition1SampleTimesOperation
+                     cmdFlag:@"010c"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerCondition2VoltageThresholdWithSucBlock:(void (^)(id returnData))sucBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition2VoltageThresholdOperation
+                     cmdFlag:@"010d"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerCondition2MinSampleIntervalWithSucBlock:(void (^)(id returnData))sucBlock
+                                                   failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition2MinSampleIntervalOperation
+                     cmdFlag:@"010e"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerCondition2SampleTimesWithSucBlock:(void (^)(id returnData))sucBlock
+                                             failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerCondition2SampleTimesOperation
+                     cmdFlag:@"010f"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
 #pragma mark ****************************************蓝牙相关参数************************************************
 
 + (void)ae_readConnectationNeedPasswordWithSucBlock:(void (^)(id returnData))sucBlock
@@ -973,9 +1021,17 @@
 }
 
 + (void)ae_readHeartbeatPayloadDataWithSucBlock:(void (^)(id returnData))sucBlock
-                                    failedBlock:(void (^)(NSError *error))failedBlock {
+                                   failedBlock:(void (^)(NSError *error))failedBlock {
     [self readDataWithTaskID:mk_ae_taskReadHeartbeatPayloadDataOperation
                      cmdFlag:@"0551"
+                    sucBlock:sucBlock
+                 failedBlock:failedBlock];
+}
+
++ (void)ae_readLowPowerPayloadDataWithSucBlock:(void (^)(id returnData))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock {
+    [self readDataWithTaskID:mk_ae_taskReadLowPowerPayloadDataOperation
+                     cmdFlag:@"0552"
                     sucBlock:sucBlock
                  failedBlock:failedBlock];
 }

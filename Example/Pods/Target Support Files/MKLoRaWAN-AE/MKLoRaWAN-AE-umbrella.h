@@ -100,6 +100,7 @@
 #import "MKAESelftestModel.h"
 #import "MKAEPCBAStatusCell.h"
 #import "MKAESelftestCell.h"
+#import "MKAESelftestVoltageThresholdCell.h"
 #import "MKAEStandbyModeModelController.h"
 #import "MKAEStandbyModeModel.h"
 #import "MKAESynDataController.h"

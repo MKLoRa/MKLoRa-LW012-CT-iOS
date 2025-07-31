@@ -31,6 +31,11 @@
             return;
         }
         
+        if (![self readLowPowerPayload]) {
+            [self operationFailedBlockWithMsg:@"Read Low-Power Payload Error" block:failedBlock];
+            return;
+        }
+        
         if (![self readPositioningPayload]) {
             [self operationFailedBlockWithMsg:@"Read Positioning Payload Error" block:failedBlock];
             return;
@@ -74,6 +79,11 @@
         
         if (![self configHeartbeatPayload]) {
             [self operationFailedBlockWithMsg:@"Config Heartbeat Payload Error" block:failedBlock];
+            return;
+        }
+        
+        if (![self configLowPowerPayload]) {
+            [self operationFailedBlockWithMsg:@"Config Low-Power Payload Error" block:failedBlock];
             return;
         }
         
@@ -133,6 +143,32 @@
 - (BOOL)configHeartbeatPayload {
     __block BOOL success = NO;
     [MKAEInterface ae_configHeartbeatPayloadWithMessageType:self.heartbeatType retransmissionTimes:(self.heartbeatMaxTimes + 1) sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readLowPowerPayload {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerPayloadDataWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.lowPowerType = [returnData[@"result"][@"type"] integerValue];
+        self.lowPowerMaxTimes = [returnData[@"result"][@"retransmissionTimes"] integerValue] - 1;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configLowPowerPayload {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerPayloadWithMessageType:self.lowPowerType retransmissionTimes:(self.lowPowerMaxTimes + 1) sucBlock:^{
         success = YES;
         dispatch_semaphore_signal(self.semaphore);
     } failedBlock:^(NSError * _Nonnull error) {

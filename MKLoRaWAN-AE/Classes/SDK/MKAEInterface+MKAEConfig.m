@@ -197,6 +197,96 @@ static NSInteger const maxDataLen = 100;
                    failedBlock:failedBlock];
 }
 
++ (void)ae_configLowPowerCondition1VoltageThreshold:(NSInteger)threshold
+                                           sucBlock:(void (^)(void))sucBlock
+                                        failedBlock:(void (^)(NSError *error))failedBlock {
+    if (threshold < 44 || threshold > 64) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:threshold byteLen:1];
+    NSString *commandString = [@"ed01010a01" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition1VoltageThresholdOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerCondition1MinSampleInterval:(NSInteger)interval
+                                            sucBlock:(void (^)(void))sucBlock
+                                         failedBlock:(void (^)(NSError *error))failedBlock {
+    if (interval < 1 || interval > 1440) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:interval byteLen:2];
+    NSString *commandString = [@"ed01010b02" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition1MinSampleIntervalOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerCondition1SampleTimes:(NSInteger)times
+                                      sucBlock:(void (^)(void))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock {
+    if (times < 1 || times > 100) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:times byteLen:1];
+    NSString *commandString = [@"ed01010c01" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition1SampleTimesOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerCondition2VoltageThreshold:(NSInteger)threshold
+                                           sucBlock:(void (^)(void))sucBlock
+                                        failedBlock:(void (^)(NSError *error))failedBlock {
+    if (threshold < 44 || threshold > 64) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:threshold byteLen:1];
+    NSString *commandString = [@"ed01010d01" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition2VoltageThresholdOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerCondition2MinSampleInterval:(NSInteger)interval
+                                            sucBlock:(void (^)(void))sucBlock
+                                         failedBlock:(void (^)(NSError *error))failedBlock {
+    if (interval < 1 || interval > 1440) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:interval byteLen:2];
+    NSString *commandString = [@"ed01010e02" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition2MinSampleIntervalOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerCondition2SampleTimes:(NSInteger)times
+                                      sucBlock:(void (^)(void))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock {
+    if (times < 1 || times > 100) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *value = [MKBLEBaseSDKAdopter fetchHexValue:times byteLen:1];
+    NSString *commandString = [@"ed01010f01" stringByAppendingString:value];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerCondition2SampleTimesOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
 #pragma mark ****************************************蓝牙相关参数************************************************
 
 + (void)ae_configNeedPassword:(BOOL)need
@@ -1569,6 +1659,23 @@ static NSInteger const maxDataLen = 100;
     NSString *timeValue = [MKBLEBaseSDKAdopter fetchHexValue:times byteLen:1];
     NSString *commandString = [NSString stringWithFormat:@"%@%@%@",@"ed01055102",typeValue,timeValue];
     [self configDataWithTaskID:mk_ae_taskConfigHeartbeatPayloadOperation
+                          data:commandString
+                      sucBlock:sucBlock
+                   failedBlock:failedBlock];
+}
+
++ (void)ae_configLowPowerPayloadWithMessageType:(mk_ae_loraWanMessageType)type
+                            retransmissionTimes:(NSInteger)times
+                                       sucBlock:(void (^)(void))sucBlock
+                                    failedBlock:(void (^)(NSError *error))failedBlock {
+    if (times < 1 || times > 4) {
+        [MKBLEBaseSDKAdopter operationParamsErrorBlock:failedBlock];
+        return;
+    }
+    NSString *typeValue = [MKBLEBaseSDKAdopter fetchHexValue:type byteLen:1];
+    NSString *timeValue = [MKBLEBaseSDKAdopter fetchHexValue:times byteLen:1];
+    NSString *commandString = [NSString stringWithFormat:@"%@%@%@",@"ed01055202",typeValue,timeValue];
+    [self configDataWithTaskID:mk_ae_taskConfigLowPowerPayloadOperation
                           data:commandString
                       sucBlock:sucBlock
                    failedBlock:failedBlock];

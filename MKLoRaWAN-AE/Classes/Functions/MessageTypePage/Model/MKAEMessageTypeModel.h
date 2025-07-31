@@ -16,6 +16,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, assign)NSInteger heartbeatMaxTimes;
 
+@property (nonatomic, assign)NSInteger lowPowerType;
+
+@property (nonatomic, assign)NSInteger lowPowerMaxTimes;
+
 @property (nonatomic, assign)NSInteger positionType;
 
 @property (nonatomic, assign)NSInteger positionMaxTimes;

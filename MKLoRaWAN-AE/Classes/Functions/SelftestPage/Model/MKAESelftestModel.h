@@ -20,7 +20,25 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy)NSString *pcbaStatus;
 
+/// 0-2.2v  20-3.2v
+@property (nonatomic, assign)NSInteger voltageThreshold1;
+
+@property (nonatomic, copy)NSString *sampleInterval1;
+
+@property (nonatomic, copy)NSString *sampleTimes1;
+
+
+/// 0-2.2v  20-3.2v
+@property (nonatomic, assign)NSInteger voltageThreshold2;
+
+@property (nonatomic, copy)NSString *sampleInterval2;
+
+@property (nonatomic, copy)NSString *sampleTimes2;
+
+
 - (void)readDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock;;
+
+- (void)configDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock;
 
 @end
 

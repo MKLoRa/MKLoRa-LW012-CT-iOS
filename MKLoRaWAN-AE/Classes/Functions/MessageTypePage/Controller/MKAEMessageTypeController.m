@@ -41,6 +41,8 @@ MKTextButtonCellDelegate>
 
 @property (nonatomic, strong)NSMutableArray *section6List;
 
+@property (nonatomic, strong)NSMutableArray *section7List;
+
 @property (nonatomic, strong)NSMutableArray *headerList;
 
 @property (nonatomic, strong)MKAEMessageTypeModel *dataModel;
@@ -94,6 +96,10 @@ MKTextButtonCellDelegate>
         MKTextButtonCellModel *cellModel = self.section6List[indexPath.row];
         return [cellModel cellHeightWithContentWidth:kViewWidth];
     }
+    if (indexPath.section == 7) {
+        MKTextButtonCellModel *cellModel = self.section7List[indexPath.row];
+        return [cellModel cellHeightWithContentWidth:kViewWidth];
+    }
     
     return 0.0f;
 }
@@ -118,22 +124,25 @@ MKTextButtonCellDelegate>
         return (self.dataModel.heartbeatType == 1 ? self.section0List.count : 1);
     }
     if (section == 1) {
-        return (self.dataModel.eventType == 1 ? self.section1List.count : 1);
+        return (self.dataModel.lowPowerType == 1 ? self.section1List.count : 1);
     }
     if (section == 2) {
-        return (self.dataModel.positionType == 1 ? self.section2List.count : 1);
+        return (self.dataModel.eventType == 1 ? self.section2List.count : 1);
     }
     if (section == 3) {
-        return (self.dataModel.shockType == 1 ? self.section3List.count : 1);
+        return (self.dataModel.positionType == 1 ? self.section3List.count : 1);
     }
     if (section == 4) {
-        return (self.dataModel.manDownType == 1 ? self.section4List.count : 1);
+        return (self.dataModel.shockType == 1 ? self.section4List.count : 1);
     }
     if (section == 5) {
-        return (self.dataModel.tamperAlarmType == 1 ? self.section5List.count : 1);
+        return (self.dataModel.manDownType == 1 ? self.section5List.count : 1);
     }
     if (section == 6) {
-        return (self.dataModel.gpsLimitType == 1 ? self.section6List.count : 1);
+        return (self.dataModel.tamperAlarmType == 1 ? self.section6List.count : 1);
+    }
+    if (section == 7) {
+        return (self.dataModel.gpsLimitType == 1 ? self.section7List.count : 1);
     }
     
     return 0;
@@ -176,9 +185,15 @@ MKTextButtonCellDelegate>
         cell.delegate = self;
         return cell;
     }
+    if (indexPath.section == 6) {
+        MKTextButtonCell *cell = [MKTextButtonCell initCellWithTableView:tableView];
+        cell.dataModel = self.section6List[indexPath.row];
+        cell.delegate = self;
+        return cell;
+    }
     
     MKTextButtonCell *cell = [MKTextButtonCell initCellWithTableView:tableView];
-    cell.dataModel = self.section6List[indexPath.row];
+    cell.dataModel = self.section7List[indexPath.row];
     cell.delegate = self;
     return cell;
 }
@@ -208,10 +223,10 @@ MKTextButtonCellDelegate>
         return;
     }
     if (index == 2) {
-        //Event Payload Type
+        //Low Power Payload Type
         MKTextButtonCellModel *cellModel = self.section1List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.eventType = dataListIndex;
+        self.dataModel.lowPowerType = dataListIndex;
         
         [self.tableView mk_reloadSection:1 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -220,14 +235,14 @@ MKTextButtonCellDelegate>
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section1List[1];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.eventMaxTimes = dataListIndex;
+        self.dataModel.lowPowerMaxTimes = dataListIndex;
         return;
     }
     if (index == 4) {
-        //Positioning Payload Type
+        //Event Payload Type
         MKTextButtonCellModel *cellModel = self.section2List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.positionType = dataListIndex;
+        self.dataModel.eventType = dataListIndex;
         
         [self.tableView mk_reloadSection:2 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -236,14 +251,14 @@ MKTextButtonCellDelegate>
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section2List[1];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.positionMaxTimes = dataListIndex;
+        self.dataModel.eventMaxTimes = dataListIndex;
         return;
     }
     if (index == 6) {
-        //Shock Payload Type
+        //Positioning Payload Type
         MKTextButtonCellModel *cellModel = self.section3List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.shockType = dataListIndex;
+        self.dataModel.positionType = dataListIndex;
         
         [self.tableView mk_reloadSection:3 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -252,14 +267,14 @@ MKTextButtonCellDelegate>
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section3List[1];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.shockMaxTimes = dataListIndex;
+        self.dataModel.positionMaxTimes = dataListIndex;
         return;
     }
     if (index == 8) {
-        //Man Down Detection Payload Type
+        //Shock Payload Type
         MKTextButtonCellModel *cellModel = self.section4List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.manDownType = dataListIndex;
+        self.dataModel.shockType = dataListIndex;
         
         [self.tableView mk_reloadSection:4 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -268,14 +283,14 @@ MKTextButtonCellDelegate>
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section4List[1];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.manDownTMaxTimes = dataListIndex;
+        self.dataModel.shockMaxTimes = dataListIndex;
         return;
     }
     if (index == 10) {
-        //Tamper Alarm Payload Type
+        //Man Down Detection Payload Type
         MKTextButtonCellModel *cellModel = self.section5List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.tamperAlarmType = dataListIndex;
+        self.dataModel.manDownType = dataListIndex;
         
         [self.tableView mk_reloadSection:5 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -284,14 +299,14 @@ MKTextButtonCellDelegate>
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section5List[1];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.tamperAlarmMaxTimes = dataListIndex;
+        self.dataModel.manDownTMaxTimes = dataListIndex;
         return;
     }
     if (index == 12) {
-        //GPS Limit Payload Type
+        //Tamper Alarm Payload Type
         MKTextButtonCellModel *cellModel = self.section6List[0];
         cellModel.dataListIndex = dataListIndex;
-        self.dataModel.gpsLimitType = dataListIndex;
+        self.dataModel.tamperAlarmType = dataListIndex;
         
         [self.tableView mk_reloadSection:6 withRowAnimation:UITableViewRowAnimationNone];
         return;
@@ -299,6 +314,22 @@ MKTextButtonCellDelegate>
     if (index == 13) {
         //Max Retransmission Times
         MKTextButtonCellModel *cellModel = self.section6List[1];
+        cellModel.dataListIndex = dataListIndex;
+        self.dataModel.tamperAlarmMaxTimes = dataListIndex;
+        return;
+    }
+    if (index == 14) {
+        //GPS Limit Payload Type
+        MKTextButtonCellModel *cellModel = self.section7List[0];
+        cellModel.dataListIndex = dataListIndex;
+        self.dataModel.gpsLimitType = dataListIndex;
+        
+        [self.tableView mk_reloadSection:7 withRowAnimation:UITableViewRowAnimationNone];
+        return;
+    }
+    if (index == 15) {
+        //Max Retransmission Times
+        MKTextButtonCellModel *cellModel = self.section7List[1];
         cellModel.dataListIndex = dataListIndex;
         self.dataModel.gpsLimitMaxTimes = dataListIndex;
         return;
@@ -343,8 +374,9 @@ MKTextButtonCellDelegate>
     [self loadSection4Datas];
     [self loadSection5Datas];
     [self loadSection6Datas];
+    [self loadSection7Datas];
     
-    for (NSInteger i = 0; i < 7; i ++) {
+    for (NSInteger i = 0; i < 8; i ++) {
         MKTableSectionLineHeaderModel *headerModel = [[MKTableSectionLineHeaderModel alloc] init];
         [self.headerList addObject:headerModel];
     }
@@ -371,97 +403,113 @@ MKTextButtonCellDelegate>
 - (void)loadSection1Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 2;
-    cellModel1.msg = @"Event Payload Type";
+    cellModel1.msg = @"Low Power Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.eventType;
+    cellModel1.dataListIndex = self.dataModel.lowPowerType;
     [self.section1List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 3;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.eventMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.lowPowerMaxTimes;
     [self.section1List addObject:cellModel2];
 }
 
 - (void)loadSection2Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 4;
-    cellModel1.msg = @"Positioning Payload Type";
+    cellModel1.msg = @"Event Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.positionType;
+    cellModel1.dataListIndex = self.dataModel.eventType;
     [self.section2List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 5;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.positionMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.eventMaxTimes;
     [self.section2List addObject:cellModel2];
 }
 
 - (void)loadSection3Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 6;
-    cellModel1.msg = @"Shock Payload Type";
+    cellModel1.msg = @"Positioning Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.shockType;
+    cellModel1.dataListIndex = self.dataModel.positionType;
     [self.section3List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 7;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.shockMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.positionMaxTimes;
     [self.section3List addObject:cellModel2];
 }
 
 - (void)loadSection4Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 8;
-    cellModel1.msg = @"Man Down Detection Payload Type";
+    cellModel1.msg = @"Shock Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.manDownType;
+    cellModel1.dataListIndex = self.dataModel.shockType;
     [self.section4List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 9;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.manDownTMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.shockMaxTimes;
     [self.section4List addObject:cellModel2];
 }
 
 - (void)loadSection5Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 10;
-    cellModel1.msg = @"Tamper Alarm Payload Type";
+    cellModel1.msg = @"Man Down Detection Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.tamperAlarmType;
+    cellModel1.dataListIndex = self.dataModel.manDownType;
     [self.section5List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 11;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.tamperAlarmMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.manDownTMaxTimes;
     [self.section5List addObject:cellModel2];
 }
 
 - (void)loadSection6Datas {
     MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
     cellModel1.index = 12;
-    cellModel1.msg = @"GPS Limit Payload Type";
+    cellModel1.msg = @"Tamper Alarm Payload Type";
     cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
-    cellModel1.dataListIndex = self.dataModel.gpsLimitType;
+    cellModel1.dataListIndex = self.dataModel.tamperAlarmType;
     [self.section6List addObject:cellModel1];
     
     MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
     cellModel2.index = 13;
     cellModel2.msg = @"Max Retransmission Times";
     cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
-    cellModel2.dataListIndex = self.dataModel.gpsLimitMaxTimes;
+    cellModel2.dataListIndex = self.dataModel.tamperAlarmMaxTimes;
     [self.section6List addObject:cellModel2];
+}
+
+- (void)loadSection7Datas {
+    MKTextButtonCellModel *cellModel1 = [[MKTextButtonCellModel alloc] init];
+    cellModel1.index = 14;
+    cellModel1.msg = @"GPS Limit Payload Type";
+    cellModel1.dataList = @[@"Unconfirmed",@"Confirmed"];
+    cellModel1.dataListIndex = self.dataModel.gpsLimitType;
+    [self.section7List addObject:cellModel1];
+    
+    MKTextButtonCellModel *cellModel2 = [[MKTextButtonCellModel alloc] init];
+    cellModel2.index = 15;
+    cellModel2.msg = @"Max Retransmission Times";
+    cellModel2.dataList = @[@"0",@"1",@"2",@"3"];
+    cellModel2.dataListIndex = self.dataModel.gpsLimitMaxTimes;
+    [self.section7List addObject:cellModel2];
 }
 
 #pragma mark - UI
@@ -535,6 +583,13 @@ MKTextButtonCellDelegate>
         _section6List = [NSMutableArray array];
     }
     return _section6List;
+}
+
+- (NSMutableArray *)section7List {
+    if (!_section7List) {
+        _section7List = [NSMutableArray array];
+    }
+    return _section7List;
 }
 
 - (NSMutableArray *)headerList {

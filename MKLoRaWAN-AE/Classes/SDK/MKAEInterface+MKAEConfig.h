@@ -125,6 +125,54 @@ NS_ASSUME_NONNULL_BEGIN
                                 sucBlock:(void (^)(void))sucBlock
                              failedBlock:(void (^)(NSError *error))failedBlock;
 
+/// Low Power Condition1 Voltage Threshold.
+/// @param threshold 44~64,unit:0.05v. 44=2.2v, 64=3.2v.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition1VoltageThreshold:(NSInteger)threshold
+                                           sucBlock:(void (^)(void))sucBlock
+                                        failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition1 Min. Sample Interval.
+/// @param interval 1Min~1440Mins.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition1MinSampleInterval:(NSInteger)interval
+                                            sucBlock:(void (^)(void))sucBlock
+                                         failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition1 Sample Times.
+/// @param times 1~100.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition1SampleTimes:(NSInteger)times
+                                      sucBlock:(void (^)(void))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Voltage Threshold.
+/// @param threshold 44~64,unit:0.05v. 44=2.2v, 64=3.2v.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition2VoltageThreshold:(NSInteger)threshold
+                                           sucBlock:(void (^)(void))sucBlock
+                                        failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Min. Sample Interval.
+/// @param interval 1Min~1440Mins.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition2MinSampleInterval:(NSInteger)interval
+                                            sucBlock:(void (^)(void))sucBlock
+                                         failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Sample Times.
+/// @param times 1~100.
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerCondition2SampleTimes:(NSInteger)times
+                                      sucBlock:(void (^)(void))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock;
+
 #pragma mark ****************************************蓝牙相关参数************************************************
 
 /// Do you need a password when configuring the device connection.
@@ -902,6 +950,16 @@ NS_ASSUME_NONNULL_BEGIN
                              retransmissionTimes:(NSInteger)times
                                         sucBlock:(void (^)(void))sucBlock
                                      failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low-Power Payload Type.
+/// @param type type
+/// @param times Max Retransmission Times.(1~4)
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_configLowPowerPayloadWithMessageType:(mk_ae_loraWanMessageType)type
+                            retransmissionTimes:(NSInteger)times
+                                       sucBlock:(void (^)(void))sucBlock
+                                    failedBlock:(void (^)(NSError *error))failedBlock;
 
 /// Event Payload Type.
 /// @param type type

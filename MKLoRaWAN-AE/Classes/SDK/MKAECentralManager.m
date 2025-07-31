@@ -495,9 +495,9 @@ static dispatch_once_t onceToken;
     }
     
     NSData *manufacturerData = advDic[@"kCBAdvDataServiceData"][[CBUUID UUIDWithString:@"AA17"]];
-    if (manufacturerData.length != 10) {
-        return @{};
-    }
+//    if (manufacturerData.length != 10) {
+//        return @{};
+//    }
     NSString *content = [MKBLEBaseSDKAdopter hexStringFromData:manufacturerData];
     
     NSString *deviceType = [content substringWithRange:NSMakeRange(0, 2)];

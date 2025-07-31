@@ -11,6 +11,7 @@
 #import "MKMacroDefines.h"
 
 #import "MKAEInterface.h"
+#import "MKAEInterface+MKAEConfig.h"
 
 @interface MKAESelftestModel ()
 
@@ -32,11 +33,89 @@
             [self operationFailedBlockWithMsg:@"Read Self Test Status Error" block:failedBlock];
             return;
         }
+        if (![self readCondition1VoltageThreshold]) {
+            [self operationFailedBlockWithMsg:@"Read Condition1 Voltage Threshold Error" block:failedBlock];
+            return;
+        }
+        if (![self readCondition1SampleInterval]) {
+            [self operationFailedBlockWithMsg:@"Read Condition1 Sample Interval Error" block:failedBlock];
+            return;
+        }
+        if (![self readCondition1SampleTimes]) {
+            [self operationFailedBlockWithMsg:@"Read Condition1 Sample Times Error" block:failedBlock];
+            return;
+        }
+        if (![self readCondition2VoltageThreshold]) {
+            [self operationFailedBlockWithMsg:@"Read Condition2 Voltage Threshold Error" block:failedBlock];
+            return;
+        }
+        if (![self readCondition2SampleInterval]) {
+            [self operationFailedBlockWithMsg:@"Read Condition2 Sample Interval Error" block:failedBlock];
+            return;
+        }
+        if (![self readCondition2SampleTimes]) {
+            [self operationFailedBlockWithMsg:@"Read Condition2 Sample Times Error" block:failedBlock];
+            return;
+        }
         
         moko_dispatch_main_safe(^{
             sucBlock();
         });
     });
+}
+
+- (void)configDataWithSucBlock:(void (^)(void))sucBlock failedBlock:(void (^)(NSError *error))failedBlock {
+    dispatch_async(self.readQueue, ^{
+        if (![self validParams]) {
+            [self operationFailedBlockWithMsg:@"Opps！Save failed. Please check the input characters and try again." block:failedBlock];
+            return;
+        }
+        
+        if (![self configCondition1VoltageThreshold]) {
+            [self operationFailedBlockWithMsg:@"Config Condition1 Voltage Threshold Error" block:failedBlock];
+            return;
+        }
+        if (![self configCondition1SampleInterval]) {
+            [self operationFailedBlockWithMsg:@"Config Condition1 Sample Interval Error" block:failedBlock];
+            return;
+        }
+        if (![self configCondition1SampleTimes]) {
+            [self operationFailedBlockWithMsg:@"Config Condition1 Sample Times Error" block:failedBlock];
+            return;
+        }
+        if (![self configCondition2VoltageThreshold]) {
+            [self operationFailedBlockWithMsg:@"Config Condition2 Voltage Threshold Error" block:failedBlock];
+            return;
+        }
+        if (![self configCondition2SampleInterval]) {
+            [self operationFailedBlockWithMsg:@"Config Condition2 Sample Interval Error" block:failedBlock];
+            return;
+        }
+        if (![self configCondition2SampleTimes]) {
+            [self operationFailedBlockWithMsg:@"Config Condition2 Sample Times Error" block:failedBlock];
+            return;
+        }
+        
+        moko_dispatch_main_safe(^{
+            if (sucBlock) {
+                sucBlock();
+            }
+        });
+    });
+}
+
+- (BOOL)validParams {
+    if (self.voltageThreshold1 < 0 || self.voltageThreshold1 > 20 || self.voltageThreshold2 < 0 || self.voltageThreshold2 > 20) {
+        return NO;
+    }
+    if (!ValidStr(self.sampleInterval1) || [self.sampleInterval1 integerValue] < 1 || [self.sampleInterval1 integerValue] > 1440 || !ValidStr(self.sampleInterval2) || [self.sampleInterval2 integerValue] < 1 || [self.sampleInterval2 integerValue] > 1440) {
+        return NO;
+    }
+    if (!ValidStr(self.sampleTimes1) || [self.sampleTimes1 integerValue] < 1 || [self.sampleTimes1 integerValue] > 100 || !ValidStr(self.sampleTimes2) || [self.sampleTimes2 integerValue] < 1 || [self.sampleTimes2 integerValue] > 100) {
+        return NO;
+    }
+    
+    return YES;
 }
 
 #pragma mark - interface
@@ -61,6 +140,156 @@
         self.gps = [binary substringWithRange:NSMakeRange(7, 1)];
         self.acceData = [binary substringWithRange:NSMakeRange(6, 1)];
         self.flash = [binary substringWithRange:NSMakeRange(5, 1)];
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition1VoltageThreshold {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition1VoltageThresholdWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.voltageThreshold1 = [returnData[@"result"][@"threshold"] integerValue] - 44;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition1VoltageThreshold {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition1VoltageThreshold:(self.voltageThreshold1 + 44) sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition1SampleInterval {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition1MinSampleIntervalWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.sampleInterval1 = returnData[@"result"][@"interval"];
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition1SampleInterval {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition1MinSampleInterval:[self.sampleInterval1 integerValue] sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition1SampleTimes {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition1SampleTimesWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.sampleTimes1 = returnData[@"result"][@"times"];
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition1SampleTimes {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition1SampleTimes:[self.sampleTimes1 integerValue] sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition2VoltageThreshold {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition2VoltageThresholdWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.voltageThreshold2 = [returnData[@"result"][@"threshold"] integerValue] - 44;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition2VoltageThreshold {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition2VoltageThreshold:(self.voltageThreshold2 + 44) sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition2SampleInterval {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition2MinSampleIntervalWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.sampleInterval2 = returnData[@"result"][@"interval"];
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition2SampleInterval {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition2MinSampleInterval:[self.sampleInterval2 integerValue] sucBlock:^{
+        success = YES;
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)readCondition2SampleTimes {
+    __block BOOL success = NO;
+    [MKAEInterface ae_readLowPowerCondition2SampleTimesWithSucBlock:^(id  _Nonnull returnData) {
+        success = YES;
+        self.sampleTimes2 = returnData[@"result"][@"times"];
+        dispatch_semaphore_signal(self.semaphore);
+    } failedBlock:^(NSError * _Nonnull error) {
+        dispatch_semaphore_signal(self.semaphore);
+    }];
+    dispatch_semaphore_wait(self.semaphore, DISPATCH_TIME_FOREVER);
+    return success;
+}
+
+- (BOOL)configCondition2SampleTimes {
+    __block BOOL success = NO;
+    [MKAEInterface ae_configLowPowerCondition2SampleTimes:[self.sampleTimes2 integerValue] sucBlock:^{
+        success = YES;
         dispatch_semaphore_signal(self.semaphore);
     } failedBlock:^(NSError * _Nonnull error) {
         dispatch_semaphore_signal(self.semaphore);

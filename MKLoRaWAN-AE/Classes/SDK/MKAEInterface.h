@@ -248,6 +248,72 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)ae_readLowPowerPayloadIntervalWithSucBlock:(void (^)(id returnData))sucBlock
                                        failedBlock:(void (^)(NSError *error))failedBlock;
 
+/// Low Power Condition1 Voltage Threshold.
+/*
+ @{
+    @"threshold":@"58",  //Unit:0.05v   58=2.9v
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition1VoltageThresholdWithSucBlock:(void (^)(id returnData))sucBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition1 Min. Sample Interval.
+/*
+ @{
+    @"interval":@"60",  //Unit:mins
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition1MinSampleIntervalWithSucBlock:(void (^)(id returnData))sucBlock
+                                                   failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition1 Sample Times.
+/*
+ @{
+    @"times":@"10",  //Unit:times
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition1SampleTimesWithSucBlock:(void (^)(id returnData))sucBlock
+                                             failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Voltage Threshold.
+/*
+ @{
+    @"threshold":@"58",  //Unit:0.05v   58=2.9v
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition2VoltageThresholdWithSucBlock:(void (^)(id returnData))sucBlock
+                                                  failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Min. Sample Interval.
+/*
+ @{
+    @"interval":@"60",  //Unit:mins
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition2MinSampleIntervalWithSucBlock:(void (^)(id returnData))sucBlock
+                                                   failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Low Power Condition2 Sample Times.
+/*
+ @{
+    @"times":@"10",  //Unit:times
+ }
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerCondition2SampleTimesWithSucBlock:(void (^)(id returnData))sucBlock
+                                             failedBlock:(void (^)(NSError *error))failedBlock;
+
 #pragma mark ****************************************蓝牙相关参数************************************************
 
 /// Is a password required when the device is connected.
@@ -1393,6 +1459,18 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param failedBlock Failure callback
 + (void)ae_readHeartbeatPayloadDataWithSucBlock:(void (^)(id returnData))sucBlock
                                     failedBlock:(void (^)(NSError *error))failedBlock;
+
+/// Read Low-Power Payload Message Type Settings.
+/*
+ @{
+     @"payloadType":@"0",           //@"0":Unconfirmed   @"1":Confirmed
+     @"number":@"1",
+ };
+ */
+/// @param sucBlock Success callback
+/// @param failedBlock Failure callback
++ (void)ae_readLowPowerPayloadDataWithSucBlock:(void (^)(id returnData))sucBlock
+                                   failedBlock:(void (^)(NSError *error))failedBlock;
 
 /// Event Payload Type.
 /*

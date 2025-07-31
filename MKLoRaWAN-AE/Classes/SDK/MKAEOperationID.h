@@ -30,6 +30,12 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     mk_ae_taskReadAllCycleBatteryInformationOperation,  //读取所有周期电池电量消耗
     mk_ae_taskReadLowPowerPayloadStatusOperation,   //读取低电触发心跳开关状态
     mk_ae_taskReadLowPowerPayloadIntervalOperation,     //读取低电状态下低电信息包上报间隔
+    mk_ae_taskReadLowPowerCondition1VoltageThresholdOperation,  //读取低电判定条件1对应低电电压值
+    mk_ae_taskReadLowPowerCondition1MinSampleIntervalOperation, //读取低电判定条件1对应最小采样间隔
+    mk_ae_taskReadLowPowerCondition1SampleTimesOperation,       //读取低电判定条件1对应连续采样次数
+    mk_ae_taskReadLowPowerCondition2VoltageThresholdOperation,  //读取低电判定条件2对应低电电压值
+    mk_ae_taskReadLowPowerCondition2MinSampleIntervalOperation, //读取低电判定条件2对应最小采样间隔
+    mk_ae_taskReadLowPowerCondition2SampleTimesOperation,       //读取低电判定条件2对应连续采样次数
     
 #pragma mark - 蓝牙参数读取
     mk_ae_taskReadConnectationNeedPasswordOperation,    //读取连接是否需要密码
@@ -147,6 +153,12 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     mk_ae_taskBatteryResetOperation,                    //清除电池电量数据
     mk_ae_taskConfigLowPowerPayloadStatusOperation,     //配置低电触发心跳开关状态
     mk_ae_taskConfigLowPowerPayloadIntervalOperation,   //配置低电状态下低电信息包上报间隔
+    mk_ae_taskConfigLowPowerCondition1VoltageThresholdOperation,  //配置低电判定条件1对应低电电压值
+    mk_ae_taskConfigLowPowerCondition1MinSampleIntervalOperation, //配置低电判定条件1对应最小采样间隔
+    mk_ae_taskConfigLowPowerCondition1SampleTimesOperation,       //配置低电判定条件1对应连续采样次数
+    mk_ae_taskConfigLowPowerCondition2VoltageThresholdOperation,  //配置低电判定条件2对应低电电压值
+    mk_ae_taskConfigLowPowerCondition2MinSampleIntervalOperation, //配置低电判定条件2对应最小采样间隔
+    mk_ae_taskConfigLowPowerCondition2SampleTimesOperation,       //配置低电判定条件2对应连续采样次数
     
     
 #pragma mark - 蓝牙参数配置
@@ -253,6 +265,7 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     mk_ae_taskReadLorawanDevTimeSyncIntervalOperation,  //读取同步时间同步间隔
     mk_ae_taskReadLorawanNetworkCheckIntervalOperation, //读取网络确认间隔
     mk_ae_taskReadHeartbeatPayloadDataOperation,            //读取心跳包上行配置
+    mk_ae_taskReadLowPowerPayloadDataOperation,             //读取低电信息包上行配置
     mk_ae_taskReadEventPayloadDataOperation,                //读取事件信息包上行配置
     mk_ae_taskReadPositioningPayloadDataOperation,          //读取定位包上行配置
     mk_ae_taskReadShockPayloadDataOperation,                //读取震动检测包上行配置
@@ -290,6 +303,7 @@ typedef NS_ENUM(NSInteger, mk_ae_taskOperationID) {
     mk_ae_taskConfigTimeSyncIntervalOperation,          //配置LoRaWAN的同步指令间隔
     mk_ae_taskConfigNetworkCheckIntervalOperation,      //配置LoRaWAN的LinkCheckReq间隔
     mk_ae_taskConfigHeartbeatPayloadOperation,          //配置心跳包上行配置
+    mk_ae_taskConfigLowPowerPayloadOperation,           //配置低电信息包上行配置
     mk_ae_taskConfigEventPayloadWithMessageTypeOperation,   //配置事件信息包上行配置
     mk_ae_taskConfigPositioningPayloadOperation,        //配置定位包上行配置
     mk_ae_taskConfigShockPayloadOperation,              //配置震动检测包上行配置
