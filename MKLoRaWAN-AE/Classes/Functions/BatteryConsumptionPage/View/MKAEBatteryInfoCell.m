@@ -38,6 +38,10 @@
 
 @property (nonatomic, strong)UILabel *batteryPowerLabel;
 
+@property (nonatomic, strong)UILabel *motionStaticLabel;
+
+@property (nonatomic, strong)UILabel *motionMoveLabel;
+
 @end
 
 @implementation MKAEBatteryInfoCell
@@ -61,6 +65,8 @@
         [self.contentView addSubview:self.loraPowerLabel];
         [self.contentView addSubview:self.loraSendCountLabel];
         [self.contentView addSubview:self.batteryPowerLabel];
+        [self.contentView addSubview:self.motionStaticLabel];
+        [self.contentView addSubview:self.motionMoveLabel];
     }
     return self;
 }
@@ -121,6 +127,18 @@
         make.top.mas_equalTo(self.loraPowerLabel.mas_bottom).mas_offset(10.f);
         make.height.mas_equalTo(MKFont(13.f).lineHeight);
     }];
+    [self.motionStaticLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(15.f);
+        make.right.mas_equalTo(-15.f);
+        make.top.mas_equalTo(self.batteryPowerLabel.mas_bottom).mas_offset(10.f);
+        make.height.mas_equalTo(MKFont(13.f).lineHeight);
+    }];
+    [self.motionMoveLabel mas_makeConstraints:^(MASConstraintMaker *make) {
+        make.left.mas_equalTo(15.f);
+        make.right.mas_equalTo(-15.f);
+        make.top.mas_equalTo(self.motionStaticLabel.mas_bottom).mas_offset(10.f);
+        make.height.mas_equalTo(MKFont(13.f).lineHeight);
+    }];
 }
 
 #pragma mark - setter
@@ -139,6 +157,8 @@
     self.loraPowerLabel.text = [SafeStr(_dataModel.loraPowerConsumption) stringByAppendingString:@" mAS"];
     self.loraSendCountLabel.text = [SafeStr(_dataModel.loraSendCount) stringByAppendingString:@" times"];
     self.batteryPowerLabel.text = [NSString stringWithFormat:@"%.3f %@",([_dataModel.batteryPower integerValue] * 0.001),@"mAH"];
+    self.motionStaticLabel.text = [SafeStr(_dataModel.motionStaticUploadReportTime) stringByAppendingString:@" peices of payload 1"];
+    self.motionMoveLabel.text = [SafeStr(_dataModel.motionMoveUploadReportTime) stringByAppendingString:@" peices of payload 2"];
 }
 
 #pragma mark - getter
@@ -206,6 +226,20 @@
         _batteryPowerLabel = [self fetchValueLabel];
     }
     return _batteryPowerLabel;
+}
+
+- (UILabel *)motionStaticLabel {
+    if (!_motionStaticLabel) {
+        _motionStaticLabel = [self fetchValueLabel];
+    }
+    return _motionStaticLabel;
+}
+
+- (UILabel *)motionMoveLabel {
+    if (!_motionMoveLabel) {
+        _motionMoveLabel = [self fetchValueLabel];
+    }
+    return _motionMoveLabel;
 }
 
 - (UILabel *)fetchValueLabel {

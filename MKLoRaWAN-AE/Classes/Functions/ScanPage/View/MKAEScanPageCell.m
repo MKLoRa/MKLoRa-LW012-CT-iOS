@@ -165,6 +165,8 @@ static CGFloat const batteryIconHeight = 12.f;
     self.txPowerLabel.text = [NSString stringWithFormat:@"%@%lddBm",@"Tx Power:  ",(long)[_dataModel.txPower integerValue]];
     self.voltageLabel.text = [NSString stringWithFormat:@"%.3f V",(0.001 * [_dataModel.voltage integerValue])];
     self.batteryLabel.text = (_dataModel.lowPower ? @"Low" : @"Full");
+    NSString *iconName = (_dataModel.lowPower ? @"ae_scan_lowBatteryIcon.png" : @"ae_scan_batteryIcon.png");
+    self.batteryIcon.image = LOADICON(@"MKLoRaWAN-AE", @"MKAEScanPageCell", iconName);
     self.connectButton.hidden = !_dataModel.connectable;
 }
 

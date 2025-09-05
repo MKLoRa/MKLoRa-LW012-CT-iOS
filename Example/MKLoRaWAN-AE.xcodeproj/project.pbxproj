@@ -58,7 +58,7 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7B4DA116B91D4A9A5F5F4F81 /* Pods-MKLoRaWAN-AE_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MKLoRaWAN-AE_Example.debug.xcconfig"; path = "Target Support Files/Pods-MKLoRaWAN-AE_Example/Pods-MKLoRaWAN-AE_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		AD6AB8D164B137B8D9565643 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
-		EA57EA933958778BEDD3ECDF /* MKLoRaWAN-AE.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "MKLoRaWAN-AE.podspec"; path = "../MKLoRaWAN-AE.podspec"; sourceTree = "<group>"; };
+		EA57EA933958778BEDD3ECDF /* MKLoRaWAN-AE.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = "MKLoRaWAN-AE.podspec"; path = "../MKLoRaWAN-AE.podspec"; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

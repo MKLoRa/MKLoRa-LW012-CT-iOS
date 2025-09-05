@@ -94,7 +94,7 @@ static const char *ae_customNotifySuccessKey = "ae_customNotifySuccessKey";
     if (!self.ae_manufacturer || !self.ae_deviceModel || !self.ae_hardware || !self.ae_software || !self.ae_firmware) {
         return NO;
     }
-    if (!self.ae_password || !self.ae_disconnectType || !self.ae_custom || !self.ae_log) {
+    if (!self.ae_password || !self.ae_disconnectType || !self.ae_custom || !self.ae_storageData || !self.ae_log) {
         return NO;
     }
     return YES;

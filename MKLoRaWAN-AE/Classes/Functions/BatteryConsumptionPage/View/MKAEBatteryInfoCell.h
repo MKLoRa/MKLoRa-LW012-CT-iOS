@@ -30,6 +30,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, copy)NSString *batteryPower;
 
+@property (nonatomic, copy)NSString *motionStaticUploadReportTime;
+
+@property (nonatomic, copy)NSString *motionMoveUploadReportTime;
+
 @end
 
 @interface MKAEBatteryInfoCell : MKBaseCell

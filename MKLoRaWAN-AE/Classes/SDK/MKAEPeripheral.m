@@ -42,7 +42,8 @@
             [self.peripheral discoverCharacteristics:characteristics forService:service];
         }else if ([service.UUID isEqual:[CBUUID UUIDWithString:@"AA00"]]) {
             NSArray *characteristics = @[[CBUUID UUIDWithString:@"AA00"],[CBUUID UUIDWithString:@"AA01"],
-                                         [CBUUID UUIDWithString:@"AA02"],[CBUUID UUIDWithString:@"AA04"]];
+                                         [CBUUID UUIDWithString:@"AA02"],[CBUUID UUIDWithString:@"AA04"],
+                                         [CBUUID UUIDWithString:@"AA05"]];
             [self.peripheral discoverCharacteristics:characteristics forService:service];
         }
     }

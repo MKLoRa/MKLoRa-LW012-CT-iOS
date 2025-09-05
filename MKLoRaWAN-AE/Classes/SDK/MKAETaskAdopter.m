@@ -229,6 +229,8 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
         NSString *loraSendCount = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(40, 8)];
         NSString *loraPowerConsumption = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(48, 8)];
         NSString *batteryPower = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(56, 8)];
+        NSString *motionStaticUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(64, 8)];
+        NSString *motionMoveUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(72, 8)];
         
         resultDic = @{
             @"workTimes":workTimes,
@@ -238,7 +240,9 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
             @"gpsPostionTimes":gpsPostionTimes,
             @"loraSendCount":loraSendCount,
             @"loraPowerConsumption":loraPowerConsumption,
-            @"batteryPower":batteryPower
+            @"batteryPower":batteryPower,
+            @"motionStaticUploadReportTime":motionStaticUploadReportTime,
+            @"motionMoveUploadReportTime":motionMoveUploadReportTime
         };
         operationID = mk_ae_taskReadBatteryInformationOperation;
     }else if ([cmd isEqualToString:@"0102"]) {
@@ -251,6 +255,8 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
         NSString *loraSendCount = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(40, 8)];
         NSString *loraPowerConsumption = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(48, 8)];
         NSString *batteryPower = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(56, 8)];
+        NSString *motionStaticUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(64, 8)];
+        NSString *motionMoveUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(72, 8)];
         
         resultDic = @{
             @"workTimes":workTimes,
@@ -260,7 +266,9 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
             @"gpsPostionTimes":gpsPostionTimes,
             @"loraSendCount":loraSendCount,
             @"loraPowerConsumption":loraPowerConsumption,
-            @"batteryPower":batteryPower
+            @"batteryPower":batteryPower,
+            @"motionStaticUploadReportTime":motionStaticUploadReportTime,
+            @"motionMoveUploadReportTime":motionMoveUploadReportTime
         };
         operationID = mk_ae_taskReadLastCycleBatteryInformationOperation;
     }else if ([cmd isEqualToString:@"0103"]) {
@@ -273,6 +281,8 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
         NSString *loraSendCount = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(40, 8)];
         NSString *loraPowerConsumption = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(48, 8)];
         NSString *batteryPower = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(56, 8)];
+        NSString *motionStaticUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(64, 8)];
+        NSString *motionMoveUploadReportTime = [MKBLEBaseSDKAdopter getDecimalStringWithHex:content range:NSMakeRange(72, 8)];
         
         resultDic = @{
             @"workTimes":workTimes,
@@ -282,7 +292,9 @@ NSString *const mk_ae_contentKey = @"mk_ae_contentKey";
             @"gpsPostionTimes":gpsPostionTimes,
             @"loraSendCount":loraSendCount,
             @"loraPowerConsumption":loraPowerConsumption,
-            @"batteryPower":batteryPower
+            @"batteryPower":batteryPower,
+            @"motionStaticUploadReportTime":motionStaticUploadReportTime,
+            @"motionMoveUploadReportTime":motionMoveUploadReportTime
         };
         operationID = mk_ae_taskReadAllCycleBatteryInformationOperation;
     }else if ([cmd isEqualToString:@"0106"]) {
