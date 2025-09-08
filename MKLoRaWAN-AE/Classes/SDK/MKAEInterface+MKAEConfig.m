@@ -2086,7 +2086,7 @@ static NSInteger const maxDataLen = 100;
 + (void)ae_pauseSendLocalData:(BOOL)pause
                      sucBlock:(void (^)(void))sucBlock
                   failedBlock:(void (^)(NSError *error))failedBlock {
-    NSString *commandString = (pause ? @"ed0109020100" : @"ed0109020100");
+    NSString *commandString = (pause ? @"ed0109020100" : @"ed0109020101");
     [self configDataWithTaskID:mk_ae_taskPauseSendLocalDataOperation
                           data:commandString
                       sucBlock:sucBlock

@@ -415,6 +415,208 @@ PODS:
     - MJRefresh
     - MKBaseModuleLibrary
     - MKCustomUIModule/View/MKTextField
+  - MKFilterPagesModule (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByAdvNamePage (= 0.0.5)
+    - MKFilterPagesModule/FilterByBeaconPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPButtonPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPSensorInfoPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPTagPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByMacPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByOtherPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByPirPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByTLMPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByTofPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByUIDPage (= 0.0.5)
+    - MKFilterPagesModule/FilterByURLPage (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByAdvNamePage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByAdvNamePage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByAdvNamePage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByAdvNamePage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByAdvNamePage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByAdvNamePage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBeaconPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBeaconPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByBeaconPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBeaconPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBeaconPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBeaconPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPButtonPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPButtonPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPButtonPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPButtonPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPButtonPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPButtonPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPSensorInfoPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPSensorInfoPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPSensorInfoPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPSensorInfoPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPSensorInfoPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPSensorInfoPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPTagPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPTagPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByBXPTagPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPTagPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByBXPTagPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByBXPTagPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByMacPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByMacPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByMacPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByMacPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByMacPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByMacPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByOtherPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByOtherPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByOtherPage/Model (= 0.0.5)
+    - MKFilterPagesModule/FilterByOtherPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByOtherPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByOtherPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByOtherPage/Model (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByOtherPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByOtherPage/Model
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByPirPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByPirPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByPirPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByPirPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByPirPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByPirPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTLMPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByTLMPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByTLMPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTLMPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByTLMPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTLMPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTofPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByTofPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByTofPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTofPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByTofPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByTofPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByUIDPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByUIDPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByUIDPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByUIDPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByUIDPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByUIDPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByURLPage (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByURLPage/Controller (= 0.0.5)
+    - MKFilterPagesModule/FilterByURLPage/Protocol (= 0.0.5)
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByURLPage/Controller (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MKFilterPagesModule/FilterByURLPage/Protocol
+    - MLInputDodger
+  - MKFilterPagesModule/FilterByURLPage/Protocol (0.0.5):
+    - MKBaseModuleLibrary
+    - MKCustomUIModule
+    - MLInputDodger
   - MKLoRaWAN-AE (0.0.1):
     - MKLoRaWAN-AE/ConnectModule (= 0.0.1)
     - MKLoRaWAN-AE/CTMediator (= 0.0.1)
@@ -443,27 +645,7 @@ PODS:
   - MKLoRaWAN-AE/Expand (0.0.1):
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKLoRaWAN-AE/Expand/FilterCell (= 0.0.1)
     - MKLoRaWAN-AE/Expand/TextButtonCell (= 0.0.1)
-  - MKLoRaWAN-AE/Expand/FilterCell (0.0.1):
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/Expand/FilterCell/FilterBeaconCell (= 0.0.1)
-    - MKLoRaWAN-AE/Expand/FilterCell/FilterByRawDataCell (= 0.0.1)
-    - MKLoRaWAN-AE/Expand/FilterCell/FilterEditSectionHeaderView (= 0.0.1)
-    - MKLoRaWAN-AE/Expand/FilterCell/FilterNormalTextFieldCell (= 0.0.1)
-  - MKLoRaWAN-AE/Expand/FilterCell/FilterBeaconCell (0.0.1):
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-  - MKLoRaWAN-AE/Expand/FilterCell/FilterByRawDataCell (0.0.1):
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-  - MKLoRaWAN-AE/Expand/FilterCell/FilterEditSectionHeaderView (0.0.1):
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-  - MKLoRaWAN-AE/Expand/FilterCell/FilterNormalTextFieldCell (0.0.1):
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
   - MKLoRaWAN-AE/Expand/TextButtonCell (0.0.1):
     - MKBaseModuleLibrary
     - MKCustomUIModule
@@ -472,6 +654,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -487,7 +670,7 @@ PODS:
     - MKLoRaWAN-AE/Functions/DeviceModePage (= 0.0.1)
     - MKLoRaWAN-AE/Functions/DeviceSettingPage (= 0.0.1)
     - MKLoRaWAN-AE/Functions/DownlinkPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages (= 0.0.1)
+    - MKLoRaWAN-AE/Functions/FilterByRawDataPage (= 0.0.1)
     - MKLoRaWAN-AE/Functions/GeneralPage (= 0.0.1)
     - MKLoRaWAN-AE/Functions/IndicatorSettingsPage (= 0.0.1)
     - MKLoRaWAN-AE/Functions/LCGpsFixPage (= 0.0.1)
@@ -518,6 +701,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -530,6 +714,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -541,6 +726,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -553,6 +739,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -568,6 +755,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -581,6 +769,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -593,6 +782,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -604,6 +794,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -618,6 +809,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -631,6 +823,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -642,6 +835,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -653,6 +847,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -667,13 +862,14 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
     - MKLoRaWAN-AE/Expand
     - MKLoRaWAN-AE/Functions/BleFixPage/Model
     - MKLoRaWAN-AE/Functions/BleFixPage/View
-    - MKLoRaWAN-AE/Functions/FilterPages
+    - MKLoRaWAN-AE/Functions/FilterByRawDataPage
     - MKLoRaWAN-AE/SDK
     - MLInputDodger
   - MKLoRaWAN-AE/Functions/BleFixPage/Model (0.0.1):
@@ -681,6 +877,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -692,6 +889,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -703,6 +901,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -717,6 +916,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -730,6 +930,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -741,6 +942,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -752,6 +954,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -765,6 +968,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -777,6 +981,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -788,6 +993,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -801,6 +1007,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -817,6 +1024,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -828,6 +1036,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -840,6 +1049,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -856,6 +1066,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -869,6 +1080,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -885,6 +1097,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -896,6 +1109,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -908,484 +1122,46 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
     - MKLoRaWAN-AE/Expand
     - MKLoRaWAN-AE/SDK
     - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages (0.0.1):
+  - MKLoRaWAN-AE/Functions/FilterByRawDataPage (0.0.1):
     - HHTransition
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
     - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage (= 0.0.1)
+    - MKLoRaWAN-AE/Functions/FilterByRawDataPage/Controller (= 0.0.1)
+    - MKLoRaWAN-AE/Functions/FilterByRawDataPage/Model (= 0.0.1)
     - MKLoRaWAN-AE/SDK
     - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage (0.0.1):
+  - MKLoRaWAN-AE/Functions/FilterByRawDataPage/Controller (0.0.1):
     - HHTransition
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
     - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Model (= 0.0.1)
+    - MKLoRaWAN-AE/Functions/FilterByRawDataPage/Model
     - MKLoRaWAN-AE/SDK
     - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Controller (0.0.1):
+  - MKLoRaWAN-AE/Functions/FilterByRawDataPage/Model (0.0.1):
     - HHTransition
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Model
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Controller
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Controller
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Controller (= 0.0.1)
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Model (= 0.0.1)
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Controller (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
-    - MKLoRaWAN-AE/ConnectModule
-    - MKLoRaWAN-AE/CTMediator
-    - MKLoRaWAN-AE/DatabaseManager
-    - MKLoRaWAN-AE/Expand
-    - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Model
-    - MKLoRaWAN-AE/SDK
-    - MLInputDodger
-  - MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Model (0.0.1):
-    - HHTransition
-    - iOSDFULibrary (= 4.13.0)
-    - MKBaseModuleLibrary
-    - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1397,6 +1173,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1410,6 +1187,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1426,6 +1204,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1437,6 +1216,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1450,6 +1230,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1462,6 +1243,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1473,6 +1255,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1486,6 +1269,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1498,6 +1282,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1509,6 +1294,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1522,6 +1308,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1535,6 +1322,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1546,6 +1334,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1559,6 +1348,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1573,6 +1363,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1584,6 +1375,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1597,6 +1389,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1609,6 +1402,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1620,6 +1414,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1633,6 +1428,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1645,6 +1441,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1656,6 +1453,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1669,6 +1467,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1681,6 +1480,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1692,6 +1492,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1705,6 +1506,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1717,6 +1519,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1728,6 +1531,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1741,6 +1545,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1753,6 +1558,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1764,6 +1570,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1777,6 +1584,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1789,6 +1597,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1800,6 +1609,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1813,6 +1623,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1825,6 +1636,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1836,6 +1648,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1849,6 +1662,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1864,6 +1678,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1875,6 +1690,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1889,6 +1705,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1903,6 +1720,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1914,6 +1732,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1926,6 +1745,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1940,6 +1760,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1953,6 +1774,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1964,6 +1786,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1975,6 +1798,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -1988,6 +1812,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2000,6 +1825,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2011,6 +1837,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2024,6 +1851,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2036,6 +1864,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2047,6 +1876,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2059,6 +1889,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2074,6 +1905,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2087,6 +1919,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2099,6 +1932,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2110,6 +1944,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2124,6 +1959,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2137,6 +1973,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2148,6 +1985,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2159,6 +1997,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2173,6 +2012,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2186,6 +2026,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2197,6 +2038,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2208,6 +2050,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2221,6 +2064,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2233,6 +2077,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2244,6 +2089,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2257,6 +2103,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2269,6 +2116,7 @@ PODS:
     - iOSDFULibrary (= 4.13.0)
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MKLoRaWAN-AE/ConnectModule
     - MKLoRaWAN-AE/CTMediator
     - MKLoRaWAN-AE/DatabaseManager
@@ -2289,7 +2137,7 @@ DEPENDENCIES:
   - MKLoRaWAN-AE (from `../`)
 
 SPEC REPOS:
-  https://github.com/CocoaPods/Specs.git:
+  trunk:
     - CircleProgressBar
     - CTMediator
     - FMDB
@@ -2301,6 +2149,7 @@ SPEC REPOS:
     - MKBaseBleModule
     - MKBaseModuleLibrary
     - MKCustomUIModule
+    - MKFilterPagesModule
     - MLInputDodger
     - SSZipArchive
     - Toast
@@ -2323,7 +2172,8 @@ SPEC CHECKSUMS:
   MKBaseBleModule: 15aa067c4e408a473e025b1a768ebce00a7e5949
   MKBaseModuleLibrary: 2b79bcae588c755588413fbb643b510253271b23
   MKCustomUIModule: 8426eba1d3178b06d92741d31da32502920fb8fa
-  MKLoRaWAN-AE: 90072a30c44458a976c18094ce6e8cf69fd87743
+  MKFilterPagesModule: 2c8b0f9a828e8dadb6f0bada35c1adeb9a93749f
+  MKLoRaWAN-AE: e6a602582126fd584fc5beec98c774c79ec50e27
   MLInputDodger: 79a0e420a80d0d3bba122bf2639603cc76609ba8
   SSZipArchive: fe6a26b2a54d5a0890f2567b5cc6de5caa600aef
   Toast: 1f5ea13423a1e6674c4abdac5be53587ae481c4e
@@ -2332,4 +2182,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: e0bf3854aa4f16721d85db2ef7749bc174c759ee
 
-COCOAPODS: 1.16.1
+COCOAPODS: 1.16.2

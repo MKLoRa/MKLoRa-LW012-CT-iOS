@@ -183,7 +183,7 @@ MKAESelftestVoltageThresholdCellDelegate>
     }
 }
 
-#pragma mark - MKADSelftestVoltageThresholdCellDelegate
+#pragma mark - MKAESelftestVoltageThresholdCellDelegate
 - (void)ae_selftestVoltageThresholdCell_thresholdChanged:(NSInteger)index threshold:(NSInteger)threshold {
     if (index == 0) {
         //Condition1 Voltage Threshold

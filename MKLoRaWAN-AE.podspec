@@ -83,25 +83,6 @@ TODO: Add long description of the pod here.
       sss.source_files = 'MKLoRaWAN-AE/Classes/Expand/TextButtonCell/**'
     end
     
-    ss.subspec 'FilterCell' do |sss|
-      sss.subspec 'FilterBeaconCell' do |ssss|
-        ssss.source_files = 'MKLoRaWAN-AE/Classes/Expand/FilterCell/FilterBeaconCell/**'
-      end
-      
-      sss.subspec 'FilterByRawDataCell' do |ssss|
-        ssss.source_files = 'MKLoRaWAN-AE/Classes/Expand/FilterCell/FilterByRawDataCell/**'
-      end
-      
-      sss.subspec 'FilterEditSectionHeaderView' do |ssss|
-        ssss.source_files = 'MKLoRaWAN-AE/Classes/Expand/FilterCell/FilterEditSectionHeaderView/**'
-      end
-      
-      sss.subspec 'FilterNormalTextFieldCell' do |ssss|
-        ssss.source_files = 'MKLoRaWAN-AE/Classes/Expand/FilterCell/FilterNormalTextFieldCell/**'
-      end
-      
-    end
-    
     ss.dependency 'MKBaseModuleLibrary'
     ss.dependency 'MKCustomUIModule'
   end
@@ -162,7 +143,7 @@ TODO: Add long description of the pod here.
         ssss.dependency 'MKLoRaWAN-AE/Functions/BleFixPage/Model'
         ssss.dependency 'MKLoRaWAN-AE/Functions/BleFixPage/View'
       
-        ssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages'
+        ssss.dependency 'MKLoRaWAN-AE/Functions/FilterByRawDataPage'
       end
     
       sss.subspec 'Model' do |ssss|
@@ -258,183 +239,19 @@ TODO: Add long description of the pod here.
         ssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/DownlinkPage/Controller/**'
       end
     end
-    
-    ss.subspec 'FilterPages' do |sss|
+  
+  ss.subspec 'FilterByRawDataPage' do |sss|
+    sss.subspec 'Controller' do |ssss|
+      ssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterByRawDataPage/Controller/**'
       
-      sss.subspec 'FilterByAdvNamePage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByAdvNamePage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByAdvNamePage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByAdvNamePage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByBeaconPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBeaconPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Model'
-          
-        end
-        
-        ssss.subspec 'Header' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBeaconPage/Header/**'
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBeaconPage/Model/**'
-          
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Header'
-        end
-      end
-      
-      sss.subspec 'FilterByMacPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByMacPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByMacPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByMacPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByOtherPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByOtherPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByOtherPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByPirPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByPirPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByPirPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByRawDataPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByRawDataPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByRawDataPage/Model'
-          
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBeaconPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByOtherPage/Controller'
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByPirPage/Controller'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByRawDataPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByTofPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByTofPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByTofPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByTofPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByTLMPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByTLMPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByTLMPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByTLMPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByUIDPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByUIDPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByUIDPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByUIDPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByURLPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByURLPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByURLPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByURLPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByBXPButtonPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBXPButtonPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPButtonPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBXPButtonPage/Model/**'
-        end
-      end
-      
-      sss.subspec 'FilterByBXPTagPage' do |ssss|
-        ssss.subspec 'Controller' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBXPTagPage/Controller/**'
-        
-          sssss.dependency 'MKLoRaWAN-AE/Functions/FilterPages/FilterByBXPTagPage/Model'
-          
-        end
-      
-        ssss.subspec 'Model' do |sssss|
-          sssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterPages/FilterByBXPTagPage/Model/**'
-        end
-      end
-      
+      ssss.dependency 'MKLoRaWAN-AE/Functions/FilterByRawDataPage/Model'
     end
+    
+    sss.subspec 'Model' do |ssss|
+      ssss.source_files = 'MKLoRaWAN-AE/Classes/Functions/FilterByRawDataPage/Model/**'
+    end
+    
+  end
     
     ss.subspec 'GeneralPage' do |sss|
       sss.subspec 'Controller' do |ssss|
@@ -772,6 +589,8 @@ TODO: Add long description of the pod here.
     
     ss.dependency 'MKBaseModuleLibrary'
     ss.dependency 'MKCustomUIModule'
+    ss.dependency 'MKFilterPagesModule'
+    
     ss.dependency 'HHTransition'
     ss.dependency 'MLInputDodger'
     ss.dependency 'iOSDFULibrary',   '4.13.0'

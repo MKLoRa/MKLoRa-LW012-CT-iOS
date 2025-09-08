@@ -30,7 +30,8 @@
 #import "MKAEBleSettingsController.h"
 
 @interface MKAEGeneralController ()<UITableViewDelegate,
-UITableViewDataSource>
+UITableViewDataSource,
+MKTextFieldCellDelegate>
 
 @property (nonatomic, strong)MKBaseTableView *tableView;
 
